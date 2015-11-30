@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Test</title>
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+	textarea {
+		padding: .15em;
+		width: 100%;
+		line-height: 1.3;
+		height: calc(8 * 1.3em + 2 * .15em);
+		tab-size: 4;
+	}
+	</style>
+</head>
+
+<body>
+
+<textarea autofocus>hr {}
+@media all {
+	.some .css {
+		ass: face;
+	}}</textarea>
+
+<textarea>function someJavascript() {
+	"use strict";
+	if ( nothing ) {
+		oele = 2;}</textarea>
+
+<script src="../auto-indent.js"></script>
+<script>
+var tas = document.querySelectorAll('textarea');
+[].forEach.call(tas, function(ta) {
+	doAutoIndent(ta, "\t");
+});
+</script>
+
+</body>
+
+</html>
