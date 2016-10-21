@@ -11,6 +11,15 @@ function doAutoIndent(ta, indent, delimiters) {
 
 	function setValue(text) {
 		ta.value = text;
+
+		try {
+			var e = new Event('input', {bubbles: true});
+			ta.dispatchEvent(e);
+		}
+		catch (ex) {
+			// Whatever
+		}
+
 		return ta.value;
 	}
 
