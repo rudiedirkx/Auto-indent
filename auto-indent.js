@@ -7,7 +7,7 @@
 
 function doAutoIndent(ta, indent, delimiters) {
 	indent || (indent = "\t");
-	delimiters || (delimiters = ['{}', '[]', '()']);
+	delimiters || (delimiters = ['{}', '[]', '()', '""', "''"]);
 
 	function setValue(text) {
 		ta.value = text;
